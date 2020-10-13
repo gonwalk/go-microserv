@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+// Greeter 服务
+service Greeter {
+    // Hello 方法
+    rpc Hello(HelloRequest) returns (HelloResponse) {}
+}
+
+// HelloRequest 对象
+message HelloRequest {
+    string name = 1;
+}
+
+// HelloResponse 对象
+message HelloResponse {
+    string greeting = 2;
+}
